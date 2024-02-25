@@ -1,0 +1,256 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+                                /* ШАПКА */
+#menu {
+    background-image: url(img/shapka.png);
+    height: 210px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#menu > div { 
+    width: 85%;
+}
+.logo-info {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    margin-bottom: 30px;
+}
+.logo p {
+    font-size: 15px;
+    font-weight: 800;
+    color: #ffffff;
+    width: 240px;
+    height: 80px;
+    padding: 10px 0;
+    margin: 0 0 0 15px;
+}
+.info {
+    height: 100px;
+}
+[class^="info-text-"] {
+    color: #ffffff;
+    margin: 1px 0;
+    font-weight: 300;
+}
+.info-text-1 {
+    font-size: 14px;
+}
+.info-text-2 {
+    font-size: 30px;
+}
+.info span {
+    font-weight: 700;
+    color: #ffffff;
+}
+.info a {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0 0 1px 0;
+    border-bottom: 1px #ffffff solid;
+}
+.header-buttons {
+    display: flex;
+    background-color: #ffffff;
+    height: 46px;
+    width: 100%;
+}
+.header-buttons a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #1681dc;
+    font-weight: 600;
+    padding: 14px 0;
+    height: 46px;
+    width: 17%;
+    text-align: center;
+}
+.header-buttons a:hover { 
+    background-color: #156cb5;
+    color: #ffffff;
+    box-shadow: inset 0 5px 10px -2px #1362a4;
+    transition: all 0.3s ease;
+}
+                /* ОСНОВНОЙ БЛОК */
+.main-content {
+    width: 85%;
+    display: flex;
+}
+.main-aside-menu {                  /* БОКОВОЕ МЕНЮ */
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+    width: 25%;
+    box-shadow: 0px 2px 1px 0px #e9e9e9;
+}
+.aside-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e9e9e9;
+    font-size: 15px;    
+    height: 60px;
+    padding: 0 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+.aside-button:hover {
+    color: #1681dc;
+    box-shadow: inset 0 -30px 20px -10px #eff7fd;
+    transition: all 0.3s ease;
+}
+.aside-button img:hover { 
+    content: url(img/blue-string.png);
+}
+                        /* БЛОК С ТОВАРАМИ */
+.main-content-div { 
+    width: 75%;
+    margin: 0 0 0 25px;
+}
+[class^="all-text-"] {
+    font-size: 20px;
+    font-weight: 300;
+}
+.all-text-1 {
+    margin: 40px 0 30px 0;
+    width: 100%;
+    
+}
+.all-text-1 span {
+    color: #1681dc;
+}
+.prelot-text {
+    border-top: 1px solid #e9e9e9;
+    padding-top: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+.main-lots {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+.lot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 175px;
+    cursor: pointer;
+}
+.lot div {
+    height: 150px;
+    width: 160px;
+    box-shadow: 0px 3px 7px 0 #e9e9e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.metal {
+    position: relative;
+}
+.metal img[src="img/металл.png"] {
+    position: absolute;
+    bottom: 0;
+}
+.lot-text {
+    color: #1681dc;
+    font-weight: bold;
+    text-align: center;
+}
+.main-content-button {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #1681dc;
+    height: 55px;
+    width: 340px;
+    border-top: 2px #5ea8e7 outset;
+    border-left: 2px #156cb5 solid;
+    border-bottom: 2px #156cb5 solid;
+    border-right: 2px #156cb5 solid;
+    margin: 45px auto 60px auto;
+    padding: 15px 0;
+    font-weight: bold;
+}
+.main-content-button:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.all-text-2 {
+    width: 100%;
+    font-size: 20px;
+    text-align: justify;
+    margin: 40px 0;
+}
+.main-content-div ul {
+    padding-left: 15px;
+}
+.main-content-div li {
+    margin: 40px 10px;
+}
+.main-content-div li::marker {
+    color: #1681dc;
+    font-size: 22px;
+}
+                            /* ПОДВАЛ */
+#copyright {
+    margin: 120px 0 0 0;
+    background-image: url(img/footer.png);
+    width: 100%;
+    height: 121px;
+    position: relative;
+}
+.copyright-img {
+    position: absolute;
+    left: 0;
+    height: 121px;
+    width: 1px;
+}
+.footer-logo-text{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 320px;
+    bottom: 35px;
+}
+.footer-text{ 
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 400;
+    margin: 0;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+.footer-logo p{
+    width: 150px;
+    font-weight: 700;
+    font-size: 10px;
+    margin-left: 10px;
+}
